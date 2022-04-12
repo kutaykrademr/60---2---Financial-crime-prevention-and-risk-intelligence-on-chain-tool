@@ -254,46 +254,6 @@ Then he applied this filter with the value = 11 500 000 000 (motes). The datas w
 ![filter4](assets/dashboard/transaction_monitor_5.png "filter4")
 
 
-3- Charts
-
-3.1 Displaying and updating charts
-
-The dashboard offers the possibility of adding charts to visualize  transaction datas.
-
-There are already 5 configured charts (embedded in the Transaction Monitor): 
-
-![charts1](assets/dashboard/charts_1.png "charts1")
-
-The reviewer was able to load all of these charts and apply changes to them.
-
-* Example with coin flow chart : 
-
-![charts2](assets/dashboard/charts_2.png "charts2")
-
-The reviewer changed the 'Metric' filter from 'Count' to 'MAX':
-
-![charts3](assets/dashboard/charts_3.png "charts3")
-
-The  coin flow chart was updated accodingly. 
-
-![charts4](assets/dashboard/charts_4.png "charts4")
-
-The reviewer increased the 'Row limit' filter from 10 to 10000 rows (transaction hashes) and was able to update the chart:
-
-![charts5](assets/dashboard/charts_5.png "charts5")
-
-3.2 Adding new charts
-
-The tool offers the possibility of adding many types of charts to explore transaction datas.
-
-![charts6](assets/dashboard/charts_6.png "charts6")
-
-The reviewer was able to add a new 'Pie' chart reflecting the transactions having a given amount.
-
-![charts7](assets/dashboard/charts_7.png "charts7")
-
-
-
 ## Overall Impression of usage testing
 The reviewer was able to build the project and the dashboard component following the instructions given in the README files on the repository.
 **However, the OP is encouraged to add examples of data analysis performed when using the dashboard in the module main page. This will allow a quick understanding of the objective of the module.
