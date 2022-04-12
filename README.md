@@ -3,7 +3,7 @@ Grant Proposal | [60 - Financial crime prevention and risk intelligence on-chain
 Milestone | 2
 Milestone Title | Web Interface
 OP | Aberto
-Reviewer | Kutay Karademşr <eee.kutay@gmail.com>
+Reviewer | Kutay Karademir <eee.kutay@gmail.com>
 
 
 
