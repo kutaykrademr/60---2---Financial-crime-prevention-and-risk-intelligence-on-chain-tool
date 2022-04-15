@@ -49,7 +49,7 @@ Docker compose (version 1.29.2 or above)
 Node.js (>=14.0.0)
 ```
 
-Test and build the project 
+Test and build the project:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
@@ -57,20 +57,20 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 ```
 ![img.jpeg](Assets/cleanCompile.jpeg)
 
-Build libs, jars and images
+Build libs, jars and images:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
 ![img.jpeg](Assets/DskipTest.jpeg)
 
-Create a docker network ori
+Create a docker network ori:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker network create ori
 ```
 
-Start postgresql and api modules (docker images)
+Start postgresql and api modules (docker images):
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
@@ -83,7 +83,7 @@ kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/
 ```
 ![img.jpeg](Assets/apiUp.jpeg)
 
-Launch the crawler for CSPR chain
+Launch the crawler for CSPR chain:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
@@ -103,12 +103,7 @@ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  ```
  ![img.jpeg](Assets/logs.jpeg)
 
-The crawler took a long time (at least a day) to populate the database.
-The crawler retrieves all the blocks, accounts and transactions of the CSPR chain from Genesis (via RPC calls). 
-The OP also offered the alternative to use an image with a database containing only recent blocks.
-the reviewer wanted to make sure that the crawler completed the whole process of populating the data without errors.
-
-Check the database was populated 
+Check the database was populated:
 
 The reviewer used  pgAdmin program to check the datas was successfully injected by the crawling process :
 He verified 3 main tables :
