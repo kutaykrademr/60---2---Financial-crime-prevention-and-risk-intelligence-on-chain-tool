@@ -117,8 +117,8 @@ Reviewer uploaded a sample of crawler for testing purposes and observed the data
 
 Web Interface , Frontend:
 
-The reviewer was able to check that the front end webapp is up and running.
-He could then access it using the url : http://localhost:8080
+The reviewer was able to reach the web interface from http://localhost:8080 after completing all the steps and could easily observe the data from the interface by using a user account from the sample data.
+
 ![img.jpeg](Assets/webInterface.jpeg)
 
 ## Overall Impression of usage testing
@@ -130,7 +130,7 @@ It would also be desirable to mention the use of 'Apache Superset' platform in t
 Requirement | Finding
 ------------ | -------------
 Project builds and runs without errors | PASS
-Documentation provides sufficient installation/execution instructions | PASS with Notes
+Documentation provides sufficient installation/execution instructions | PASS
 Project functionality meets/exceeds acceptance criteria and operates without error | PASS 
 
 
@@ -141,7 +141,6 @@ There are currently no tools to perform automated tests on this platform. the re
 Based on last review , the project contained only 24 unit tests accross all its modules . 
 An effort has been made to improve the test coverage of the project which now has 107 unit tests.
 The tests can be executed from the console and cover both positive and negative test paths.
-
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % sudo ./mvnw test
@@ -159,8 +158,7 @@ Unit Tests - Additional path tests | PASS
 
 ### Code Documentation
 
-A commendable effort has been made to document the project code following the remarks made on this point in the reviews of milestone 1. The code is now overall well documented  and almost all classes and critical functions have acceptable code-level documentation.
-
+The reviewer says that all critical functions of the project have code documents that can be used for automated document generation.
 
 Requirement | Finding
 ------------ | -------------
@@ -168,25 +166,20 @@ Code documentation | PASS
 
 ### Project Documentation
 
-The project documentation is generally sufficient and the instructions for building and running project are clear.
-**However, it is desirable to add, within each module of the project, a detailled description of the component and its critical functions.
-In order to give a quick undesrstaing of the whole project,  The OP is encouraged to add a brief description of what the project is about and its objectives. The reviewer had first to install and run the project and navigate through the different modules to get an idea of the purpose of the project.
-The OP could add a diagram (simple package uml diagram) illustrating the links between the different modules.**
+The reviewer observed that the project README has detailed general and usage documentation. Observes that the project has good project documentation.
 
 Requirement | Finding
 ------------ | -------------
-Project Documentation | PASS with Notes
-
+Project Documentation | PASS
 
 ## Overall Conclusion on Documentation
-
-In the reviewer's opinion, the project and usage documentation are sufficient. The OP is encouraged to provide detailed documentation  on the general usage of the project and its different modules.
+The reviewer concludes that the project has sufficient comprehensive general documentation.
 
 # Open Source Practices
 
 ## Licenses
 
-The Project is released under the MIT License
+The Project is released under the MIT License.
 
 Requirement | Finding
 ------------ | -------------
@@ -194,7 +187,7 @@ OSI-approved open source software license | PASS
 
 ## Contribution Policies
 
-The project contains a CONTRIBUTING policy that links to a Code of Conduct policy. Pull requests and Issues are enabled.
+The project contains a CONTRIBUTION policy.
 
 Requirement | Finding
 ------------ | -------------
@@ -216,5 +209,5 @@ In the reviewer's opinion, this submission should PASS with Notes
 
 # Recommendation
 
-Recommendation | PASS with Notes
+Recommendation | PASS
 ------------ | -------------
