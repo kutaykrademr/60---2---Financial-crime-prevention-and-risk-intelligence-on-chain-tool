@@ -56,18 +56,12 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 
 ```
 
-Output : [60-3 clean-compile](assets/build.md "build")
-
-
 
 3. Build libs, jars and images
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
-
-Output:  [60-3 package](assets/build_libs.md "build_libs")
-
 
 4. Create a docker network ori
 
@@ -103,7 +97,6 @@ The reviewer was then able to check crawling is up and running using the followi
  ```bash
 docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  ```
-![crawling](assets/crawling.png "crawling CSPR")
 
 The crawler took a long time (at least a day) to populate the database.
 The crawler retrieves all the blocks, accounts and transactions of the CSPR chain from Genesis (via RPC calls). 
