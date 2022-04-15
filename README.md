@@ -79,34 +79,24 @@ kutaykarademir@MacBook-Pro ori-main %  docker network create ori
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
-Creating docker_ori-postgresql_1 ... done
-Creating docker_ori-api_1        ... done
 ```
 
 the reviewer was able to verify that the 2 docker images were up :
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps
-         Name                        Command              State                    Ports
-----------------------------------------------------------------------------------------------------------
-docker_ori-api_1          /deployments/run-java.sh        Up      0.0.0.0:8080->8080/tcp,:::8080->8080/tcp
-docker_ori-postgresql_1   docker-entrypoint.sh postgres   Up      0.0.0.0:5432->5432/tcp,:::5432->5432/tcp
 ```
 
 6. Launch the crawler for CSPR chain
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
-Creating docker_ori-cspr_1 ... done
 ```
 
 the reviewer was able to verify that the docker image was up :
 
  ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
-      Name              Command        State   Ports
-----------------------------------------------------
-docker_ori-cspr_1   /cnb/process/web   Up
  ```
 The reviewer was then able to check crawling is up and running using the following command line :
 
