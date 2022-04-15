@@ -64,23 +64,14 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
 ![img.jpeg](Assets/DskipTest.jpeg)
 
-Create a docker network ori:
+
 
 ```bash
-kutaykarademir@MacBook-Pro ori-main %  docker network create ori
+kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a docker network ori:
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images):
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps. //Check if both went up
 ```
 
-Start postgresql and api modules (docker images):
-
-```bash
-kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
-```
-
-the reviewer was able to verify that the 2 docker images were up :
-
-```bash
-kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps
-```
 ![img.jpeg](Assets/apiUp.jpeg)
 
 Launch the crawler for CSPR chain:
