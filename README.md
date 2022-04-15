@@ -55,6 +55,8 @@ Test and build the project:
 kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 
 ```
+Output:
+
 ![img.jpeg](Assets/cleanCompile.jpeg)
 
 Build libs, jars and images:
@@ -62,6 +64,8 @@ Build libs, jars and images:
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
+Output:
+
 ![img.jpeg](Assets/DskipTest.jpeg)
 
 Create a docker network ori and try to start postgresql and api:
@@ -71,6 +75,8 @@ kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a doc
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images)
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps. //Check if both went up
 ```
+Output:
+
 ![img.jpeg](Assets/apiUp.jpeg)
 
 Reviewer failed to run the ori-api on the first try, but after the second try the ori-api was up. (OP, has specified in the read.me file that this problem may occur and how to solve it.)
@@ -81,7 +87,7 @@ Launch the crawler for CSPR chain:
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
 kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
 ```
-the reviewer was able to verify that the docker image was up :
+Output:
 
  ![img.jpeg](Assets/chainUp.jpeg)
  
@@ -90,6 +96,8 @@ The reviewer was then able to check crawling is up and running using the followi
  ```bash
 docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  ```
+ Output:
+ 
  ![img.jpeg](Assets/logs.jpeg)
 
 Check the database was populated:
