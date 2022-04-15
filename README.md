@@ -52,7 +52,7 @@ Node.js (>=14.0.0)
 2. Test and build the project 
 
 ```bash
-~/reviews/ori$ ./mvnw clean compile
+kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 
 ```
 
@@ -63,7 +63,7 @@ Output : [60-3 clean-compile](assets/build.md "build")
 3. Build libs, jars and images
 
 ```bash
-~/reviews/ori$ ./mvnw package -DskipTests
+kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
 
 Output:  [60-3 package](assets/build_libs.md "build_libs")
@@ -72,13 +72,13 @@ Output:  [60-3 package](assets/build_libs.md "build_libs")
 4. Create a docker network ori
 
 ```bash
-~/reviews/ori$ docker network create ori
+kutaykarademir@MacBook-Pro ori-main %  docker network create ori
 ```
 
 5. Start postgresql and api modules (docker images)
 
 ```bash
-~/reviews/ori$ docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
 Creating docker_ori-postgresql_1 ... done
 Creating docker_ori-api_1        ... done
 ```
@@ -86,7 +86,7 @@ Creating docker_ori-api_1        ... done
 the reviewer was able to verify that the 2 docker images were up :
 
 ```bash
-docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps
          Name                        Command              State                    Ports
 ----------------------------------------------------------------------------------------------------------
 docker_ori-api_1          /deployments/run-java.sh        Up      0.0.0.0:8080->8080/tcp,:::8080->8080/tcp
@@ -96,14 +96,14 @@ docker_ori-postgresql_1   docker-entrypoint.sh postgres   Up      0.0.0.0:5432->
 6. Launch the crawler for CSPR chain
 
 ```bash
-~/reviews/ori$ docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
 Creating docker_ori-cspr_1 ... done
 ```
 
 the reviewer was able to verify that the docker image was up :
 
  ```bash
- ~/reviews/ori$ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
+kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
       Name              Command        State   Ports
 ----------------------------------------------------
 docker_ori-cspr_1   /cnb/process/web   Up
