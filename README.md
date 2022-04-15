@@ -102,8 +102,10 @@ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
 
 Check the database was populated:
 
-The reviewer used  pgAdmin program to check the datas was successfully injected by the crawling process :
-He verified 3 main tables :
+```bash
+docker exec -i docker_ori-postgresql_1 psql -U ori_db_user ori_db < ori-chains/ori-cspr/src/test/resources/db-sample/ori_db_sample.sql
+```
+Reviewer uploaded a sample of crawler for testing purposes and observed the data using postgresql for control purpose.
 
    ![account](Assets/accountData.png) 
 
@@ -113,11 +115,10 @@ He verified 3 main tables :
    
    ![token](Assets/tokenData.png)
 
-
-Access the front-end
+Web Interface , Frontend:
 
 The reviewer was able to check that the front end webapp is up and running.
-He could then access it using the url : http://server_ip_address:8080
+He could then access it using the url : http://localhost:8080
 ![img.jpeg](Assets/webInterface.jpeg)
 
 ## Overall Impression of usage testing
