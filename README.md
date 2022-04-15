@@ -131,7 +131,7 @@ He verified 3 main tables :
 
    ![transaction](Assets/transactionData.png)
    
-   * Transaction:
+   * Token:
    
    ![token](Assets/tokenData.png)
 
