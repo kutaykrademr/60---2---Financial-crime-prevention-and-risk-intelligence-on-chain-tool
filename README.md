@@ -64,13 +64,14 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
 ![img.jpeg](Assets/DskipTest.jpeg)
 
-
+Create a docker network ori and try to start postgresql and api:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a docker network ori
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images)
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps. //Check if both went up
 ```
+Reviewer failed to run the ori-api on the first try, but after the second try the ori-api was up. (OP, has specified in the read.me file that this problem may occur and how to solve it.)
 
 ![img.jpeg](Assets/apiUp.jpeg)
 
