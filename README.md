@@ -55,7 +55,7 @@ Node.js (>=14.0.0)
 kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 
 ```
-
+Output:![img.jpeg](Assets/cleanCompile)
 
 3. Build libs, jars and images
 
