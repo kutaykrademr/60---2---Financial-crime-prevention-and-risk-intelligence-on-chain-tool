@@ -121,15 +121,19 @@ He verified 3 main tables :
    
    * Account :
 
-   ![account](Assets/accountData) 
+   ![account](Assets/accountData.png) 
 
    * Block:
 
-   ![block](Assets/blockData)
+   ![block](Assets/blockData.png)
    
    * Transaction:
 
-   ![transaction](Assets/transactionData)
+   ![transaction](Assets/transactionData.png)
+   
+   * Transaction:
+   
+   ![token](Assets/tokenData.png)
 
 9. Start the dashboard
 
