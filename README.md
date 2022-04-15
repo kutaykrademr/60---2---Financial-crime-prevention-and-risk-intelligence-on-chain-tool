@@ -242,10 +242,11 @@ The tests can be executed from the console and cover both positive and negative 
 
 
 ```bash
-~/reviews/ori$ ./mvnw test
+kutaykarademir@MacBook-Pro ori-main % sudo ./mvnw test
 ```
 
-Output : [60-3 unit_test](assets/unit_tests.md "tests")
+[Test-1](Assets/Test1.jpeg)
+[Test-2](Assets/Test2.jpeg)
 
 Requirement | Finding
 ------------ | -------------
