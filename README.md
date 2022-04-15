@@ -79,13 +79,10 @@ Launch the crawler for CSPR chain:
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
+kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
 ```
-
 the reviewer was able to verify that the docker image was up :
 
- ```bash
-kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
- ```
  ![img.jpeg](Assets/chainUp.jpeg)
  
 The reviewer was then able to check crawling is up and running using the following command line :
