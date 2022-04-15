@@ -244,8 +244,8 @@ The tests can be executed from the console and cover both positive and negative 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % sudo ./mvnw test
 ```
-![Test-1](Assets/Test-1.jpeg)
-![Test-2(Assets/Test-2.jpeg)
+![Test-1](Assets/Test1.jpeg)
+![Test-2](Assets/Test2.jpeg)
 
 Requirement | Finding
 ------------ | -------------
