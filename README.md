@@ -49,7 +49,7 @@ Docker compose (version 1.29.2 or above)
 Node.js (>=14.0.0)
 ```
 
-2. Test and build the project 
+Test and build the project 
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
@@ -57,20 +57,20 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 ```
 ![img.jpeg](Assets/cleanCompile.jpeg)
 
-3. Build libs, jars and images
+Build libs, jars and images
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
 ![img.jpeg](Assets/DskipTest.jpeg)
 
-4. Create a docker network ori
+Create a docker network ori
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker network create ori
 ```
 
-5. Start postgresql and api modules (docker images)
+Start postgresql and api modules (docker images)
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d
@@ -83,7 +83,7 @@ kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/
 ```
 ![img.jpeg](Assets/apiUp.jpeg)
 
-6. Launch the crawler for CSPR chain
+Launch the crawler for CSPR chain
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
@@ -108,13 +108,7 @@ The crawler retrieves all the blocks, accounts and transactions of the CSPR chai
 The OP also offered the alternative to use an image with a database containing only recent blocks.
 the reviewer wanted to make sure that the crawler completed the whole process of populating the data without errors.
 
-7. Access the front-end
-
-The reviewer was able to check that the front end webapp is up and running.
-He could then access it using the url : http://server_ip_address:8080
-![img.jpeg](Assets/webInterface.jpeg)
-
-8. Check the database was populated 
+Check the database was populated 
 
 The reviewer used  pgAdmin program to check the datas was successfully injected by the crawling process :
 He verified 3 main tables :
@@ -135,6 +129,11 @@ He verified 3 main tables :
    
    ![token](Assets/tokenData.png)
 
+Access the front-end
+
+The reviewer was able to check that the front end webapp is up and running.
+He could then access it using the url : http://server_ip_address:8080
+![img.jpeg](Assets/webInterface.jpeg)
 
 ## Overall Impression of usage testing
 The reviewer was able to build the project and the dashboard component following the instructions given in the README files on the repository.
