@@ -96,22 +96,15 @@ Check the database was populated:
 
 The reviewer used  pgAdmin program to check the datas was successfully injected by the crawling process :
 He verified 3 main tables :
-   
-   * Account :
 
    ![account](Assets/accountData.png) 
 
-   * Block:
-
    ![block](Assets/blockData.png)
    
-   * Transaction:
-
    ![transaction](Assets/transactionData.png)
    
-   * Token:
-   
    ![token](Assets/tokenData.png)
+
 
 Access the front-end
 
