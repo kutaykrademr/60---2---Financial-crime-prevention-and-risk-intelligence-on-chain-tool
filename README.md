@@ -9,11 +9,12 @@ Reviewer | Kutay Karademir <eee.kutay@gmail.com>
 
 # Milestone Details
 
+
 ## Details & Acceptance Criteria
 
 **Details of what will be delivered in milestone:**
 
-- Data analytics and compliance layer with functionalities to spot potential fraud and/or financial crime
+- Web Interface
 
 **Acceptance criteria:**
 
@@ -37,9 +38,8 @@ https://github.com/syntifi/ori| ade4902
 Following the instructions in the README file of the repositoty : https://github.com/syntifi/ori and the file provided as a guide for this milestone
 https://github.com/syntifi/ori/blob/main/TLDR-CSPR.md
 
-the reviewer was able to :
 
-1- Install required dependencies:
+First of all , Reviewer started to install the required dependencies.
 
 ```console
 Java 11
