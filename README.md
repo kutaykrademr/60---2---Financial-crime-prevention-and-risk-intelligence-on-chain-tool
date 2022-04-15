@@ -17,34 +17,12 @@ Reviewer | Kutay Karademir <eee.kutay@gmail.com>
 
 **Acceptance criteria:**
 
-- Incorporate an open source data visualization interface (eg. Kibana, Graphana) and provide a couple of analytics charts
+- Have an interactive Web interface that leverages on the GraphQL API and enables the "trace the coin" solution.
 
 
 **Additional notes regarding submission from OP:**
-There was a major code refactor on the ORI project:
-1. The project now is broken into several modules
-    - ori-api (containing the REST API and database models)
-    - ori-chains (contiaining the crawlers for different chains)
-    - ori-client (a simple java client to use ori-api)
-    - ori-dashboard (the deliverable for this milestone)
-    - ori-frontend (the deliverable for the previous milestone)
-    - ori-risk-metric (the module responsible for the risk metric calculations)
-    - ori-shared (an implementation of DTO objects)
-2. We migrated from a no-sql persistency layer (Elastic Search) to Postgresql together with hibernate
-3. All dockers, jars are built with ./mvwn package command
-4. The front-end also has been modified to add the capability to choose the chain
-5. An ETH crawler has also been added to the project
 
-**Notes from previous review**
-
-With respect to this milestone specifically, after compiling the project and crawling the blockchain to populate the database (note that this might take a while) it is possible to access a preloaded dashboard after running the appropriate docker file through localhost:8088 with login: admin and password:admin (or any other value specified to the docker container running the dashboard)
-**REST API**
-- Swagger-ui: http://localhost:8080/q/swagger-ui/
-- Swagger file: http://localhost:8080/swagger
-
-**GraphQL API**
-- GraphQL-ui: http://localhost:8080/q/graphql-ui/
-- Schema: http://localhost:8080/graphql/schema.graphql
+This second milestone builds on top of the first milestone and adds a front-end interface built on react.js.
 
 ## Milestone Submission
 
@@ -52,7 +30,7 @@ The following milestone assets/artifacts were submitted for review:
 
 Repository | Revision Reviewed
 ------------ | -------------
-https://github.com/syntifi/ori/tree/main/ori-dashboard | 118a181
+https://github.com/syntifi/ori| ade4902
 
 # Install & Usage Testing Procedure and Findings
 
@@ -61,17 +39,17 @@ https://github.com/syntifi/ori/blob/main/TLDR-CSPR.md
 
 the reviewer was able to :
 
-1- Install required dependencies on an Ubuntu 20.04 cloud server:
+1- Install required dependencies:
 
 ```console
-Java 11 or above
+Java 11
 Maven (3.8.1 or above)
 Docker
 Docker compose (version 1.29.2 or above)
-Node.js (>=14.0.0) 
+Node.js (>=14.0.0)
 ```
 
-2. Test and build the project on an Ubuntu 20.04 cloud server
+2. Test and build the project 
 
 ```bash
 ~/reviews/ori$ ./mvnw clean compile
@@ -164,8 +142,6 @@ He verified 3 main tables :
    * Transaction:
 
    ![transaction](assets/transaction.png "transaction")
-   
-
 
 9. Start the dashboard
 
@@ -182,9 +158,6 @@ The reviewer was then able to check the dashboard is up and running using the fo
 --------------------------------------------------------------------------------------------------------
 docker_dashboard_1   sh ./docker/entrypoint.sh   Up (healthy)   0.0.0.0:8088->8088/tcp,:::8088->8088/tcp
 ```
-
-
-
 
 ### Testing the dashboard
 
