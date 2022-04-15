@@ -67,8 +67,8 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 
 
 ```bash
-kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a docker network ori:
-kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images):
+kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a docker network ori
+kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images)
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps. //Check if both went up
 ```
 
