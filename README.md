@@ -62,6 +62,7 @@ kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
 ```
+![img.jpeg](Assets/DskipTest.jpeg)
 
 4. Create a docker network ori
 
@@ -80,6 +81,7 @@ the reviewer was able to verify that the 2 docker images were up :
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps
 ```
+![img.jpeg](Assets/apiUp.jpeg)
 
 6. Launch the crawler for CSPR chain
 
@@ -92,11 +94,14 @@ the reviewer was able to verify that the docker image was up :
  ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml ps
  ```
+ ![img.jpeg](Assets/chainUp.jpeg)
+ 
 The reviewer was then able to check crawling is up and running using the following command line :
 
  ```bash
 docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  ```
+ ![img.jpeg](Assets/logs.jpeg)
 
 The crawler took a long time (at least a day) to populate the database.
 The crawler retrieves all the blocks, accounts and transactions of the CSPR chain from Genesis (via RPC calls). 
@@ -107,7 +112,7 @@ the reviewer wanted to make sure that the crawler completed the whole process of
 
 The reviewer was able to check that the front end webapp is up and running.
 He could then access it using the url : http://server_ip_address:8080
-![front_end](assets/front_end.png "front_end")
+![img.jpeg](Assets/webInterface.jpeg)
 
 8. Check the database was populated 
 
