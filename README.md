@@ -133,12 +133,8 @@ Project functionality meets/exceeds acceptance criteria and operates without err
 
 
 # Unit / Automated Testing
-This part of the project uses Apache superSet to perform data analysis and exploration. 
-There are currently no tools to perform automated tests on this platform. the reviewer was limited to running the above test scenarios.
 
-Based on last review , the project contained only 24 unit tests accross all its modules . 
-An effort has been made to improve the test coverage of the project which now has 107 unit tests.
-The tests can be executed from the console and cover both positive and negative test paths.
+After installing the requirements and adding the necessary configuration settings, following the instructions given in the README in the project, the tests were run. No error was received during the tests for app and api.
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % sudo ./mvnw test
