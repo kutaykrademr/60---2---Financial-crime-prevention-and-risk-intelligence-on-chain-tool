@@ -135,7 +135,7 @@ Project functionality meets/exceeds acceptance criteria and operates without err
 
 After following the instructions given in the README in the project and installing the requirements and adding the necessary configuration settings, the tests were run. No error was received during the tests. The tests cover both positive and negative test paths.
 
-In Addition: Also: Tests were also conducted in dev mode.
+In Addition:Tests were also conducted in dev mode.
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % sudo ./mvnw test
