@@ -100,12 +100,12 @@ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  
  ![img.jpeg](Assets/logs.jpeg)
 
-Check the database was populated:
+Check the database:
 
 ```bash
 docker exec -i docker_ori-postgresql_1 psql -U ori_db_user ori_db < ori-chains/ori-cspr/src/test/resources/db-sample/ori_db_sample.sql
 ```
-Reviewer uploaded a sample of crawler for testing purposes and observed the data using postgresql for control purpose.
+The reviewer uploaded a sample of crawler for testing purposes and observed the data using postgresql for control purpose.
 
    ![account](Assets/accountData.png) 
 
@@ -115,7 +115,7 @@ Reviewer uploaded a sample of crawler for testing purposes and observed the data
    
    ![token](Assets/tokenData.png)
 
-Web Interface , Frontend:
+Web Interface(Frontend & Api):
 
 The reviewer was able to reach the web interface from http://localhost:8080 after completing all the steps and could easily observe the data from the interface by using a user account from the sample data.
 
