@@ -191,15 +191,11 @@ OSS contribution best practices | PASS
 
 ## General Observations
 
-Code is generally well-structured and readable. The project has been committed to GitHub and all 107 unit tests pass.
+Code is generally well structured and readable. The Github linked project is easy and successful to set up. The reviewer observed that he did not encounter any errors in the tests that would have required the project to fail.
 
 # Final Conclusion
 
-The project provides the functionality described in the grant application and milestone acceptance criteria. 
-**The reviewer spent a significant amount of time understanding the usefulness of the project and the its features.
-The reviewer thus draws the OP's attention to the need to improve the general documentation of the project and its modules during the next milestones.**
-
-In the reviewer's opinion, this submission should PASS with Notes
+The project provides the functionality described in the grant application and milestone acceptance criteria. It also meets the standards required by the CRDAO. Thus, in the reviewer's opinion, this submission should PASS.
 
 # Recommendation
 
