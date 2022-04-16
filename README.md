@@ -49,7 +49,7 @@ Docker compose (version 1.29.2 or above)
 Node.js (>=14.0.0)
 ```
 
-**Test and build the project:
+**Test and build the project:**
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw clean compile
@@ -59,7 +59,7 @@ Output:
 
 ![img.jpeg](Assets/cleanCompile.jpeg)
 
-Build libs, jars and images:
+**Build libs, jars and images:**
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % ./mvnw package -DskipTests
@@ -68,7 +68,7 @@ Output:
 
 ![img.jpeg](Assets/DskipTest.jpeg)
 
-Create a docker network ori and try to start postgresql and api:
+**Create a docker network ori and try to start postgresql and api:**
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a docker network ori
@@ -81,7 +81,7 @@ Output:
 
 ![img.jpeg](Assets/apiUp.jpeg)
 
-Launch the crawler for CSPR chain:
+**Launch the crawler for CSPR chain:**
 
 ```bash
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-chains/ori-cspr/src/main/docker/docker-compose.yml up -d
@@ -100,7 +100,7 @@ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
  
  ![img.jpeg](Assets/logs.jpeg)
 
-Check the database:
+**Check the database:**
 
 ```bash
 docker exec -i docker_ori-postgresql_1 psql -U ori_db_user ori_db < ori-chains/ori-cspr/src/test/resources/db-sample/ori_db_sample.sql
@@ -115,7 +115,7 @@ The reviewer uploaded a sample of crawler for testing purposes and observed the 
    
    ![token](Assets/tokenData.png)
 
-Web Interface(Frontend & Api):
+**Web Interface(Frontend & Api):**
 
 The reviewer was able to reach the web interface from http://localhost:8080 after completing all the steps and could easily observe the data from the interface by using a user account from the sample data.
 
