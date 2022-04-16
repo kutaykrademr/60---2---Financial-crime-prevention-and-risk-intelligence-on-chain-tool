@@ -38,7 +38,7 @@ Following the instructions in the README file of the repositoty : https://github
 https://github.com/syntifi/ori/blob/main/TLDR-CSPR.md
 
 
-First of all , Reviewer started to install the required dependencies.
+First of all , Reviewer started with installing the required dependencies.
 
 ```console
 Java 11
@@ -74,7 +74,7 @@ kutaykarademir@MacBook-Pro ori-main %  docker network create ori  //Create a doc
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ./ori-api/src/main/docker/docker-compose-jvm.yml up -d  //Start postgresql and api modules (docker images)
 kutaykarademir@MacBook-Pro ori-main % docker-compose -f ori-api/src/main/docker/docker-compose-jvm.yml ps. //Check if both went up
 ```
-Reviewer failed to run the ori-api on the first try, but after the second try the ori-api was up. (OP, has specified in the read.me file that this problem may occur and how to solve it.)
+Reviewer failed to run the ori-api on the first try, but after the second try the ori-api was up and running. (OP has specified in the read.me file that this problem may occur and how to solve it.)
 
 Output:
 
@@ -90,7 +90,7 @@ Output:
 
  ![img.jpeg](Assets/chainUp.jpeg)
  
-The reviewer was then able to check crawling is up and running using the following command line :
+The reviewer was then able to check crawler is up and running using the following command line :
 
  ```bash
 docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
@@ -104,7 +104,7 @@ docker-compose -f ori-chains/ori-cspr/src/main/docker/docker-compose.yml logs -f
 ```bash
 docker exec -i docker_ori-postgresql_1 psql -U ori_db_user ori_db < ori-chains/ori-cspr/src/test/resources/db-sample/ori_db_sample.sql
 ```
-The reviewer uploaded a sample of crawler for testing purposes and observed the data using postgresql for control purpose.
+The reviewer uploaded a sample of crawler data for testing purposes and observed the data using postgresql for control purpose.
 
    ![account](Assets/accountData.png) 
 
@@ -121,7 +121,7 @@ The reviewer was able to reach the web interface from http://localhost:8080 afte
 ![img.jpeg](Assets/webInterface.jpeg)
 
 ## Overall Impression of usage testing
-The reviewer was able to build and run the project following the instructions. And also the documentation also provides adequate installation/execution instructions for different scenarios. The reviewer thinks that the project functionality will meet the acceptance criteria.
+The reviewer was able to build and run the project with following the instructions. And also the documentation provides adequate installation/execution instructions for different scenarios. The reviewer thinks that the project functionality will meet the acceptance criteria.
 
 
 Requirement | Finding
@@ -133,7 +133,7 @@ Project functionality meets/exceeds acceptance criteria and operates without err
 
 # Unit / Automated Testing
 
-After installing the requirements and adding the necessary configuration settings, following the instructions given in the README in the project, the tests were run. No error was received during the tests for project. The tests cover both positive and negative test paths.
+After following the instructions given in the README in the project and installing the requirements and adding the necessary configuration settings, the tests were run. No error was received during the tests. The tests cover both positive and negative test paths.
 
 In Addition: Also: Tests were also conducted in dev mode.
 
@@ -153,7 +153,7 @@ Unit Tests - Additional path tests | PASS
 
 ### Code Documentation
 
-The reviewer says that all critical functions of the project have code documents that can be used for automated document generation.
+The reviewer confirmed that all critical functions of the project are well documented and can be used for automated document generation.
 
 Requirement | Finding
 ------------ | -------------
@@ -161,14 +161,14 @@ Code documentation | PASS
 
 ### Project Documentation
 
-The reviewer observed that the project README has detailed general and usage documentation. Observes that the project has good project documentation.
+The reviewer observed that the project README has detailed usage documentation and project is generally well documented.
 
 Requirement | Finding
 ------------ | -------------
 Project Documentation | PASS
 
 ## Overall Conclusion on Documentation
-The reviewer concludes that the project has sufficient comprehensive general documentation.
+The reviewer concluded that the project has sufficient comprehensive general documentation.
 
 # Open Source Practices
 
@@ -192,7 +192,7 @@ OSS contribution best practices | PASS
 
 ## General Observations
 
-Code is generally well structured and readable. The Github linked project is easy and successful to set up. The reviewer observed that he did not encounter any errors in the tests that would have required the project to fail.
+Code is generally well structured and readable. Project is easy to set up from Github repository. The reviewer observed that he did not encounter any errors in the tests that would have required the project to fail the review.
 
 # Final Conclusion
 
